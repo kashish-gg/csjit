@@ -1,0 +1,18 @@
+{% block header %}
+<nav>
+  <a href="/"> Home </a>
+  <a href="/instructions"> Author instructions </a>
+  <a href="/topics"> Topics </a>
+  <a href="/dates"> Important dates </a>
+  <a href="/papers">Submitted papers </a>
+  <a href="/contact"> Contact us </a>
+  {% if user.is_authenticated %}
+  Welcome {{request.user.username}}
+  <a href="/submit-paper"> submit papers </a>
+  <a href="/logout"> logout </a>
+  {% else %}
+  <a href="/register"> Register </a>
+  <a href="/login"> login </a>
+  {% endif %}
+</nav>
+{% endblock %}
