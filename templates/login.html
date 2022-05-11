@@ -1,5 +1,4 @@
-{% extends 'base.html' %}
-{% block login %}
+{% extends 'base.html' %} {% block login %}
 <div class="log-reg">
   <h2 class="">login</h2>
   <form action="/handleLogin/" method="POST" class="">
@@ -25,9 +24,9 @@
       />
     </div>
     <button type="submit" class="">Login</button>
+    <a href="/register">
+      <button class="">don't have an account?</button>
+    </a>
   </form>
-  <a href="/register">
-    <button class="">don't have an account?</button>
-  </a>
 </div>
 {% endblock %}

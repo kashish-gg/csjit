@@ -1,15 +1,73 @@
 {% extends 'base.html' %}
+{% load static %}
  {% block submit %}
-<div class="submit">
-  <form action="">
+<div class="submit log-reg">
+  <form action="/handlePost/" method="post">
+    {% csrf_token %}
     <div class="input-group">
         <label for="">title</label>
-        <input type="text" />
+        <input type="text"id="title"
+        name="title"
+        placeholder="Enter Title"
+        required />
     </div>
         <div class="input-group">
             <label for="">topic</label>
-            <input type="text" />
+            <input type="text" id="topic"
+            name="topic"
+            placeholder="Enter Topic"
+            required/>
         </div>
+        <div class="input-group">
+          <label for="">gender</label>
+          <input type="text"id="gender"
+          name="gender"
+          placeholder=" Enter Gender"
+          required />
+      </div>
+      <div class="input-group">
+        <label for="">category</label>
+        <input type="text"id="category"
+        name="category"
+        placeholder="Enter Fresh/Proffesional"
+        required />
+    </div>
+    <div class="input-group">
+      <label for="">phone number</label>
+      <input type="text" id="phone"
+      name="phone"
+      placeholder="Enter Phone number"
+      required/>
+  </div>
+  <div class="input-group">
+    <label for="">email id</label>
+    <input type="text"id="emailid"
+    name="emailid"
+    placeholder="Enter email "
+    required />
+</div>
+  <div class="input-group">
+    <label class="underline" for="">payment details</label>
+  </div>
+  <div class="input-group">
+    <img src={% static 'assets/Qrcode.png' %} alt=""/>
+    <label class="underline" for="">Scan It!</label>
+  </div>
+  <div class="input-group">
+    <label for="">amount paid</label>
+    <input type="text"id="amount_paid"
+    name="amount_paid"
+    placeholder="Enter Amount paid "
+    required />
+</div>
+<div class="input-group">
+  <label for="">account number</label>
+  <input type="text"id="accountno"
+  name="accountno"
+  placeholder="Enter Account number"
+  required />
+</div>
+
     <div class="input-group">
         <label for="">description</label>
         <textarea name="" id="" cols="30" rows="10"></textarea>

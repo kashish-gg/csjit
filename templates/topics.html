@@ -2,20 +2,125 @@
 {% block topics %}
 <div class="topics page-con">
 <h1>Computer Science (CS)</h1>
-<li>Geo-informative Systems</li>
-<li>Grid Computing</li>
-<li>Pervasive Computing</li>
-<li>Digital Image and Video Processing</li>
-<li>Computer Vision and Image Analysis</li>
-<li>Data Mining and Cloud Computing</li>
-<li>Computer Architecture</li>
-<li>Computer Networks</li>
-<li>Distributed Computing</li>
-<li>Artificial Intelligence & Soft Computing</li>
-<li>Optimization Techniques</li>
-<li>Human-Computer Interaction</li>
-<li>Theoretical Computer Science</li>
-<li>Computer Applications</li>
-<li>Expert Systems</li>
+{% for topic in topics %}
+<li>{{topic.title}}</li>
+{% endfor %}
+
+</div>
+    <h2 class='topics-more'>more topics</h2>
+  <div class="page-grid">
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1597268616857-733c41aea4a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80"
+        alt=""
+      />
+      <h2>adoption</h2>
+      <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, consectetur. Earum eveniet eaque eligendi. Voluptas voluptate, inventore, facere explicabo reiciendis ut nulla possimus sequi ad non quibusdam harum. Voluptate ipsa numquam maxime sint cupiditate, optio eligendi at fugiat dolores veniam nesciunt dolorem tempora explicabo sapiente laboriosam velit voluptatem harum exercitationem? Quos corrupti, suscipit, illum aperiam, numquam cumque quisquam molestias dolore nisi magni dignissimos vitae officia voluptatibus mollitia dolor animi assumenda facilis ea nostrum. Sit quos omnis reprehenderit laborum labore repellat aut cumque porro accusamus minima! Architecto dolor explicabo quam. Assumenda!
+        Find information about the intercountry adoption process, background
+        checks, visa types, immigration through adoption, home study, and
+        after-adoption approval.
+      </p>
+    </div>
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1631345949051-a9e41ca58e90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+        alt=""
+      />
+      <h2>archive</h2>
+      <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ducimus vero totam sed amet aspernatur expedita iste perferendis quas facilis neque iure ipsam blanditiis, corrupti itaque! Repudiandae nesciunt deserunt consequuntur est officiis nisi modi quia sequi suscipit nulla excepturi in mollitia tempore unde quaerat fuga, dignissimos veritatis. Excepturi asperiores quasi cum, inventore voluptates temporibus consequuntur, a molestiae cumque necessitatibus eligendi natus aliquam quas veritatis maiores sequi vero reprehenderit illum quam sed aliquid voluptatem rem aut? Praesentium adipisci dicta repellendus facere molestias voluptatibus, nobis ad quod. Eos minima suscipit odio. Officiis non debitis illum consequatur, libero tempore sint dolorem totam impedit!
+        This section has information that is out of date, but, because some content may still be useful, we have archived these pages.
+      </p>
+    </div>
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1581544291234-31340be4b1b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHRleHR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+        alt=""
+      />
+      <h2>a-z index</h2>
+      <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi esse fugiat omnis aliquid saepe, commodi, reprehenderit, veniam explicabo incidunt eius quia! Veniam laboriosam doloribus minima voluptatem voluptatum harum fugiat voluptatibus voluptates perferendis nulla corporis, incidunt cum et aliquam suscipit ea quia porro aspernatur facilis dignissimos dolorem dolorum alias? Mollitia natus alias, excepturi maiores, recusandae commodi praesentium similique tenetur et perferendis minima ipsam est. Voluptate delectus repellat nisi, ipsam facilis dicta optio maxime accusantium unde dolorum fuga reprehenderit qui perspiciatis ex. Rerum necessitatibus distinctio sunt laudantium? Nobis doloribus dolorem odit maxime.
+        You can use the index to find links to relevant content
+      </p>
+    </div>
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1573167507387-6b4b98cb7c13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+        alt=""
+      />
+      <h2>career</h2>
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non natus dicta consequuntur dolorem dolor adipisci, provident nam voluptates, itaque quo incidunt, quibusdam totam tenetur omnis aliquam iste porro fugit. Quia ex necessitatibus fuga corporis omnis soluta delectus tempore, nam aliquam odio, dolor vero ducimus labore ullam nostrum cumque consequatur eos!
+        At USCIS, we oversee legal immigration to the United States. You can help people build better lives while defending the integrity of our nation’s immigration system. Employees find value, meaning, and personal satisfaction in their work.
+      </p>
+    </div>
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1611024847487-e26177381a3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        alt=""
+      />
+      <h2>family</h2>
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ullam iusto expedita, amet temporibus, nihil pariatur numquam nesciunt nulla nemo, necessitatibus harum ipsa dolorem. Corrupti distinctio dolorum consequatur neque facilis? Consequuntur esse nisi mollitia corporis modi dicta dolorum fugiat distinctio iure? Voluptatum sit eum sapiente, porro delectus quibusdam alias ipsam!
+        Learn how U.S. immigration law applies to families of U.S. citizens, of refugees and asylees, of Green Card holders (permanent residents), and of couples in same-sex marriages.
+      </p>
+    </div>
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        alt=""
+      />
+      <h2>file online</h2>
+      <p>
+        Learn how U.S. immigration law applies to families of U.S. citizens, of refugees and asylees, of Green Card holders (permanent residents), and of couples in same-sex marriages.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolores, aut repellat aperiam quam quasi excepturi assumenda odio at! Earum unde fugit fuga in, labore cum vero. Sed, voluptate perferendis!
+      </p>
+    </div>
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1550114711-8daf8fec534e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+        alt=""
+      />
+      <h2>i9</h2>
+      <p>
+        Learn how U.S. immigration law applies to families of U.S. citizens, of refugees and asylees, of Green Card holders (permanent residents), and of couples in same-sex marriages.
+        Learn how U.S. immigration law applies to families of U.S. citizens, of refugees and asylees, of Green Card holders (permanent residents), and of couples in same-sex marriages.
+        Learn how U.S. immigration law applies to families of U.S. citizens, of refugees and asylees, of Green Card holders (permanent residents), and of couples in same-sex marriages.
+      </p>
+    </div>
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1547555999-14e818e09e33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGJvb2t8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+        alt=""
+      />
+      <h2>glossary</h2>
+      <p>
+        Learn how U.S. immigration law applies to families of U.S. citizens, of refugees and asylees, of Green Card holders (permanent residents), and of couples in same-sex marriages.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quo omnis quae, natus accusamus optio ut rerum voluptas enim atque nemo officia dolor voluptatum dolore minima earum delectus fugiat perferendis illum sapiente porro aut nesciunt fuga. Quisquam ratione quidem est.
+      </p>
+    </div>
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1604128311556-816dfb846a54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        alt=""
+      />
+      <h2>records</h2>
+      <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus eligendi tempore totam corrupti, expedita harum consequatur repudiandae optio vero ratione molestias deserunt inventore mollitia pariatur unde atque in impedit tenetur modi error fuga! Animi enim dicta modi. Numquam, iure culpa aperiam quaerat tempore repellendus est quasi alias cum? Quisquam molestiae vel illum iusto tenetur!
+        Learn how U.S. immigration law applies to families of U.S. citizens, of refugees and asylees, of Green Card holders (permanent residents), and of couples in same-sex marriages.
+      </p>
+    </div>
+    <div class="card">
+      <img
+        src="https://media.istockphoto.com/photos/gruop-of-business-people-standing-around-white-board-during-meeting-picture-id1054986574?b=1&k=20&m=1054986574&s=170667a&w=0&h=r_gwGFZEBeN5RJiBgJCY2_YUYlooIc1bWBs--PHUd4o="
+        alt=""
+      />
+      <h2>gruops</h2>
+      <p>
+          olor sit amet consectetur adipisicing elit. Voluptatibus eligendi tempore totam corrupti, expedita harum consequatur repudiandae optio vero ratione molestias deserunt inventore mollitia pariatur unde atque in impedit tenetur modi error fuga! Animi enim dicta modi. Numquam, iure culpa aperiam quaerat tempore repellendus est quasi alias cum? Quisquam molestiae vel illum iusto tenetur!
+      </p>
+    </div>
+  </div>
 </div>
 {% endblock  %}

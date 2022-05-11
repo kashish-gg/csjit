@@ -12,12 +12,20 @@
 <body>
     {% block header %}{% include 'header.html'%}{% endblock  %}
     <main>
+    <img class="banner" src={% static "assets/csjit_banner.png"%} alt="">
+    {% if messages %}
+    {% for message in messages %}
+    {{message}}
+    {% endfor %}
+    {% endif %}
         {% block home %}{% endblock  %}
         {% block inst %}{% endblock  %}
         {% block topics %}{% endblock  %}
         {% block login %}{% endblock  %}
         {% block register %}{% endblock  %}
         {% block submit %}{% endblock  %}
+        {% block contact %}{% endblock  %}
+        {% block dates %}{% endblock  %}
     </main>
     {% block footer %}{% include 'footer.html'%}{% endblock  %}
 </body>

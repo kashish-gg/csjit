@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block dates %}
+<h1>
+    IMPORTANT DATES
+</h1>
+<div class="dates">
+    {% for date in dates %}
+    <p>{{date.title}}:<span>{{date.date}}</span></p>
+{% endfor %}
+    <p>Conference dates:<span class='closed'>Closed</span></p>
+</div>
+{% endblock  %}

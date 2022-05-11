@@ -1,17 +1,15 @@
-{% extends 'base.html' %}
-{% block register %}
+{% extends 'base.html' %} {% block register %}
 <div class="log-reg reg">
-    {% if from.errors %}
-    <p>there was an error</p>
-    {% endif %}
-    <h2 class="">register</h2>
-    <form action="/handleRegister/" method="POST">
-      {% csrf_token %} {{ form}}
-      <button type="submit" class="">Register</button>
-      <a href="/register">
-        <button class="">already have an account?</button>
-      </a>
-    </form>
-  </div>
-
-{% endblock  %}
+  {% if from.errors %}
+  <p>there was an error</p>
+  {% endif %}
+  <h2 class="">register</h2>
+  <form action="/handleRegister/" method="POST">
+    {% csrf_token %} {{ form}}
+    <button type="submit" class="">Register</button>
+    <a href="/register">
+      <button class="">already have an account?</button>
+    </a>
+  </form>
+</div>
+{% endblock %}
