@@ -30,12 +30,13 @@ def contact(request):
         request,'contact.html'
     )
 def postsPage(request):
-    allposts = post.objects.all()
+    allposts = post.objects.all()[::-1]
     return render(
         request,'posts.html',{'posts':allposts}
     )
 def loginPage(request):
     return render(request,'login.html')
+
 def register(request):
     form=UserCreationForm()
     return render(request,'register.html',{'form':form})
@@ -89,7 +90,7 @@ def handlePost(request):
         emailid = request.POST['emailid']
         amountpaid = request.POST['amount_paid']
         accountnumber = request.POST['accountno']
-        description = request.POST.get('description',False)
+        description = request.POST['description']
         newform=models.post.objects.create()
         newform.user_id=str(request.user.username)
         newform.topic=topic
